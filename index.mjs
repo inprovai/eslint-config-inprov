@@ -77,6 +77,8 @@ export default async function eslintConfig(options = {}) {
         '.next/**',
         'node_modules/**',
         '.claude/**',
+        '**/*.md/**',
+        'docs/**',
         ...ignores,
       ],
     }),
