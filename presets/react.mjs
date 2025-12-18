@@ -3,18 +3,6 @@
  * Includes: react-compiler plugin
  */
 
-/** React-specific plugins (loaded conditionally) */
-export function getReactPlugins() {
-  try {
-    const reactCompiler = await import('eslint-plugin-react-compiler');
-    return {
-      'react-compiler': reactCompiler.default || reactCompiler,
-    };
-  } catch {
-    return {};
-  }
-}
-
 /** React-specific rules */
 export const reactRules = {
   'react-compiler/react-compiler': 'error',
