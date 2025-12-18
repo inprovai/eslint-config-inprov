@@ -1,0 +1,41 @@
+{
+  "name": "eslint-config-inprov",
+  "version": "1.0.0",
+  "description": "Strict ESLint configuration for TypeScript projects with optional React/Next.js support",
+  "type": "module",
+  "main": "index.mjs",
+  "exports": {
+    ".": "./index.mjs",
+    "./base": "./presets/base.mjs",
+    "./react": "./presets/react.mjs"
+  },
+  "files": [
+    "index.mjs",
+    "presets/"
+  ],
+  "keywords": [
+    "eslint",
+    "eslint-config",
+    "typescript",
+    "react",
+    "nextjs",
+    "strict"
+  ],
+  "author": "Brad",
+  "license": "MIT",
+  "peerDependencies": {
+    "@antfu/eslint-config": "^6.7.1",
+    "eslint": "^9.0.0",
+    "eslint-plugin-security": "^3.0.1",
+    "eslint-plugin-sonarjs": "^3.0.5",
+    "typescript": "^5.0.0"
+  },
+  "peerDependenciesMeta": {
+    "eslint-plugin-react-compiler": {
+      "optional": true
+    }
+  },
+  "optionalPeerDependencies": {
+    "eslint-plugin-react-compiler": "^19.0.0"
+  }
+}
