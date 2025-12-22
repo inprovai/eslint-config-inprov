@@ -73,6 +73,7 @@ export default async function eslintConfig(options = {}) {
         quotes: 'single',
         semi: true,
       },
+      perfectionist: false,
       ignores: [
         '.next/**',
         'node_modules/**',
