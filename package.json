@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-inprov",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Strict ESLint configuration for TypeScript projects with optional React/Next.js support",
   "type": "module",
   "main": "index.mjs",
